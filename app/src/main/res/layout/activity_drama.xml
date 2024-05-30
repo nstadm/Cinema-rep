@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/comedy_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ДРАМА"
+        android:textSize="32sp"
+        android:fontFamily="@font/bebas"
+        android:textColor="@color/red"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/comedy_title"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <!-- Первый фильм -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/image_king_of_staten_island"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/nomadland"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_toEndOf="@id/image_king_of_staten_island"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/title_king_of_staten_island"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='"NOMADLAND" (2020)'
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:gravity="center"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/description_king_of_staten_island"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bebas"
+                    android:text='Фільм розповідає історію жінки на ім’я Ферн, яка після економічного колапсу в своєму місті вирушає в подорож по західних штатах Америки, живучи як сучасна кочівниця в фургоні.'
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/price_king_of_staten_island"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="350 ГРН"
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Второй фильм -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/image_dont_look_up"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/hereditary"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/image_dont_look_up"
+                android:gravity="center"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/title_dont_look_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='"THE FATHER" (2020)'
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/description_dont_look_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:text='У головній ролі Ентоні Гопкінс, який грає літнього чоловіка, що бореться з деменцією. Фільм розповідає про його стосунки з донькою (Олівія Колман) і те, як хвороба поступово забирає у нього спогади та розуміння реальності.'
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/price_dont_look_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500 ГРН"
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Третий фильм -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/image_palm_springs"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/minari"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/image_palm_springs"
+                android:gravity="center"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/title_palm_springs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='"MINARI" (2020)'
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/description_palm_springs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bebas"
+                    android:text='Фільм розповідає про корейсько-американську родину, яка переїжджає до сільської Арканзасу у пошуках нових можливостей. Батько родини мріє створити власну ферму, в той час як інші члени родини намагаються пристосуватися до нового життя.'
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/price_palm_springs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="450 ГРН"
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Четвертый фильм -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/image_free_guy"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/mank"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/image_free_guy"
+                android:gravity="center"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/title_free_guy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebas"
+                    android:text='"MANK" (2020)'
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/description_free_guy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:text='Фільм режисера Девіда Фінчера розповідає про життя сценариста Германа Дж. Манкевича та його роботу над сценарієм до фільму "Громадянин Кейн". Чорно-біла стрічка занурює глядача у Голлівуд 1930-х років, розкриваючи внутрішні конфлікти та політичні інтриги епохи.'
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/price_free_guy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebas"
+                    android:text="400 ГРН"
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

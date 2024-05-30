@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/confirmation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOPE YOU HAVE A GREAT TIME!"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:fontFamily="@font/bebas"
+        android:textColor="@color/red"
+        android:textFontWeight="1000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/selected_movie_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ФІЛЬМ, ЯКИЙ ВИ ОБРАЛИ:"
+        android:textSize="24sp"
+        android:fontFamily="@font/bebas"
+        android:textColor="@color/red"
+        android:layout_below="@id/confirmation_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp" />
+
+    <TextView
+        android:id="@+id/selected_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='"MOVIE_TITLE"'
+        android:fontFamily="@font/bebas"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/selected_movie_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/selected_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ЦІНА КВИТКА:"
+        android:textSize="24sp"
+        android:fontFamily="@font/bebas"
+        android:textColor="@color/red"
+        android:layout_below="@id/selected_movie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/selected_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='"PRICE"'
+        android:fontFamily="@font/bebas"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/selected_price_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/selected_seat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ВАШЕ МІСЦЕ:"
+        android:textSize="24sp"
+        android:fontFamily="@font/bebas"
+        android:textColor="@color/red"
+        android:layout_below="@id/selected_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/selected_seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='"SEAT"'
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/bebas"
+        android:layout_below="@id/selected_seat_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

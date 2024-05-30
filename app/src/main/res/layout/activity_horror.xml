@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/comedy_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ЖАХИ"
+        android:textSize="32sp"
+        android:fontFamily="@font/bebas"
+        android:textColor="@color/red"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/comedy_title"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <!-- Первый фильм -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/image_king_of_staten_island"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/a_quiet"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_toEndOf="@id/image_king_of_staten_island"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/title_king_of_staten_island"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='"A QUIET PLACE PART II" (2020)'
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:gravity="center"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/description_king_of_staten_island"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bebas"
+                    android:text='Родина Абботт повинна продовжувати боротьбу за виживання у світі, де найменший шум може призвести до смерті від рук загадкових монстрів. Цього разу вони виходять за межі свого будинку і дізнаються, що жахи зовнішнього світу не обмежуються лише монстрами.'
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/price_king_of_staten_island"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="400 ГРН"
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Второй фильм -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/image_dont_look_up"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/hereditary"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/image_dont_look_up"
+                android:gravity="center"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/title_dont_look_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='"HEREDITARY" (2018)'
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/description_dont_look_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:text='Після смерті матріарха родини Грем, її дочка та онуки починають відкривати жахливі секрети про своє походження. Фільм досліджує теми спадковості, психічного здоров’я і надприродного, створюючи неповторну атмосферу страху та тривоги.'
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/price_dont_look_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="550 ГРН"
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Третий фильм -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/image_palm_springs"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/the_ritual"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/image_palm_springs"
+                android:gravity="center"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/title_palm_springs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text='"THE RITUAL" (2017)'
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/description_palm_springs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bebas"
+                    android:text='Група друзів з університету вирушає у похід у память про свого загиблого друга. Вони обирають маловідомий маршрут через шведський ліс, де стикаються з древнім злом, яке переслідує їх і змушує протистояти власним страхам і таємницям.                '
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/price_palm_springs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="450 ГРН"
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Четвертый фильм -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/image_free_guy"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/invisible"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/image_free_guy"
+                android:gravity="center"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/title_free_guy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebas"
+                    android:text='"THE INVISIBLE MAN" (2020)'
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/description_free_guy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebas"
+                    android:textColor="@color/black"
+                    android:text='Сесілія намагається втекти від свого жорстокого партнера, який вчиняє самогубство і залишає їй величезну спадщину. Проте вона починає підозрювати, що його смерть була інсценізацією, і що він став невидимим, щоб продовжувати тероризувати її.'
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/price_free_guy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebas"
+                    android:text="500 ГРН"
+                    android:textColor="@color/black"
+                    android:textFontWeight="1000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

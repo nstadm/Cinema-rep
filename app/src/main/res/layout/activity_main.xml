@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT A MOVIE GENRE"
+        android:textSize="38sp"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:fontFamily="@font/bebas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/title"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <RelativeLayout
+            android:id="@+id/button_comedy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/image_comedy"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/comedy_image"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/text_comedy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="КОМЕДІЇ"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:fontFamily="@font/bebas"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/image_comedy"
+                android:layout_marginStart="90dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_horror"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/image_horror"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/horror_image"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/text_horror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ЖАХИ"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bebas"
+                android:textSize="32sp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/image_horror"
+                android:layout_marginStart="90dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_drama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/image_drama"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/drama_image"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/text_drama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ДРАМА"
+                android:fontFamily="@font/bebas"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/image_drama"
+                android:layout_marginStart="90dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
